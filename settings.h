@@ -5,7 +5,6 @@
 #define IO_USERNAME "your_username"
 #define IO_KEY "your_key"
 #define GATE_FEED "gmail"     //incoming
-#define CAR_FEED "car"        //outgoing, only if ultrasonic sensor
 
 //blynk
 #define BLYNK_AUTH_TOKEN "your_auth"
