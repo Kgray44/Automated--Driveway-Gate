@@ -11,8 +11,8 @@
 #define MY_MESSAGE "There is a car in your driveway!" //Blynk notification
 
 //WiFi
-#define WIFI_SSID "your_ssid"
-#define WIFI_PASS "your_pass"
+char WIFI_SSID[] = "your_ssid";
+char WIFI_PASS[] = "your_pass";
 
 //GATE
 #define Mode "automatic"      //automatic or button
