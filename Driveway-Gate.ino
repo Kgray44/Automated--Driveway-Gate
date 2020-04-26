@@ -17,7 +17,6 @@ BLYNK_WRITE(V0){
 
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 AdafruitIO_Feed *gate_feed = io.feed(GATE_FEED);
-AdafruitIO_Feed *car_feed = io.feed(CAR_FEED);
 
 void setup() {
   Serial.begin(9600);
