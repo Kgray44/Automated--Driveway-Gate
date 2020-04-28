@@ -43,23 +43,10 @@ void setup() {
     Serial.println(io.statusText());
     gate_feed->get();
   }
-  else if (IOT_CHOICE == "both"){
-    Blynk.config(auth);
-    io.connect();
-    gate_feed->onMessage(handleMessage);
-    while(io.status() < AIO_CONNECTED) {
-      Serial.print(".");
-      delay(500);
-    }
-    Serial.println();
-    Serial.println(io.statusText());
-    gate_feed->get();
-    Blynk.disconnect();
-  }
 }
 
 void loop() {
-  if ((IOT_CHOICE == "adafruit")||(IOT_CHOICE == "both")){
+  if (IOT_CHOICE == "adafruit"){
     io.run();
   }
   if (IOT_CHOICE == "blynk"){
