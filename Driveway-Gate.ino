@@ -7,7 +7,6 @@
 
 char auth[] = BLYNK_AUTH_TOKEN;
 
-boolean car = false;
 int timer = 0;
 int button;
 
