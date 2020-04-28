@@ -1,5 +1,5 @@
 //IOT
-#define IOT_CHOICE "blynk"    //blynk or adafruit or both
+#define IOT_CHOICE "blynk"    //blynk or adafruit
 
 //adafruit
 #define IO_USERNAME "your_username"
