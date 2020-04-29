@@ -15,7 +15,7 @@ char WIFI_SSID[] = "your_ssid";
 char WIFI_PASS[] = "your_pass";
 
 //GATE
-#define Mode "automatic"      //automatic or button
+String Mode "automatic"      //automatic or button
 #define gateNumber 2          //how many gates; 1 or 2
 #define gateOpenAmount 10     //only for automatic mode, seconds
 #define gateDirection 1       //1 or 2
