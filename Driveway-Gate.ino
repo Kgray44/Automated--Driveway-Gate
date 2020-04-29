@@ -59,29 +59,7 @@ void loop() {
 
 void handleMessage(AdafruitIO_Data *data) {
   Serial.println("Got Mail!");
-  if (Mode == "automatic"){
-    openGate();
-    waitForGate();
-    allStop();
-    delay(gateOpenAmount*1000);
-    closeGate();
-    waitForGate();
-    allStop();
-  }
-  else if(Mode == "button"){
-    if (timer == 0){
-      openGate();
-      waitForGate();
-      allStop();
-      timer = 1;
-    }
-    else if(timer == 1){
-      closeGate();
-      waitForGate();
-      allStop();
-      timer = 0;
-    }
-  }
+  gates();
 }
 
 void gates(){
