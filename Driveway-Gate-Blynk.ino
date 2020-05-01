@@ -106,10 +106,6 @@ void loop() {
   Blynk.run();
 }
 
-void handleMessage(AdafruitIO_Data *data) {
-  gates();
-}
-
 void gates(){
   Serial.println("Got Mail!");
   if (Mode == "automatic"){
