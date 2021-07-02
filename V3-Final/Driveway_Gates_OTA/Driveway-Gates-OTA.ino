@@ -6,6 +6,7 @@
 #include <math.h>
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
+#include <AdafruitIO_WiFi.h>
 
 AdafruitIO_Feed *car = io.feed("car");
 
