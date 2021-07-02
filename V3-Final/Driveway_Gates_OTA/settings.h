@@ -8,6 +8,8 @@
 #define BLYNK_BLUE      "#04C0F8"
 #define YOUR_LAT        43.419868
 #define YOUR_LONG       -72.467632
+#define IO_USERNAME     "KGray7777"
+#define IO_KEY          "aio_VUZo11AfxVJP7h3l1oEZPxNEKSxO"
 
 //WiFi
 char WIFI_SSID[] = "Apple Network 85064d";
