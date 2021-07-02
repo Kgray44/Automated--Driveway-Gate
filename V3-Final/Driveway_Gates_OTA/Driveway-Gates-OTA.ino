@@ -104,7 +104,7 @@ void setup() {
   OTAStart();
   Blynk.config(BLYNK_AUTH_TOKEN);
   io.connect();
-  counter->onMessage(handleMessage);
+  car->onMessage(handleMessage);
   while(io.mqttStatus() < AIO_CONNECTED) {
     Serial.print(".");
     delay(500);
