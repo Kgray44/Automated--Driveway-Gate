@@ -389,7 +389,8 @@ void OTAStart(){
 void handleMessage(AdafruitIO_Data *data) {
   Serial.print("received <- ");
   Serial.println(data->value());
-  if (data == 1){
+  int dat = data->toInt();
+  if (dat == 1){
     opengates();
   }
 }
