@@ -7,6 +7,8 @@
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
 
+AdafruitIO_Feed *car = io.feed("car");
+
 char auth[] = BLYNK_AUTH_TOKEN;
 
 int timer = 0;
@@ -100,6 +102,14 @@ void setup() {
   }
   OTAStart();
   Blynk.config(BLYNK_AUTH_TOKEN);
+  io.connect();
+  counter->onMessage(handleMessage);
+  while(io.mqttStatus() < AIO_CONNECTED) {
+    Serial.print(".");
+    delay(500);
+  }
+  car->get();
+
   led.on();
   led.setColor(BLYNK_RED);
 }
@@ -149,6 +159,7 @@ void loop() {
     }
   }
   Blynk.run();
+  io.run();
 }
 
 void gates(){
@@ -372,4 +383,12 @@ void OTAStart(){
   Serial.println("Ready");
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
+}
+
+void handleMessage(AdafruitIO_Data *data) {
+  Serial.print("received <- ");
+  Serial.println(data->value());
+  if ((data->value) == 1){
+    opengates();
+  }
 }
