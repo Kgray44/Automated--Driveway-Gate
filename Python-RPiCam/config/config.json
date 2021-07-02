@@ -1,0 +1,7 @@
+{
+	// variables to store your twilio account credentials
+	"twilio_sid": "*******************************",
+	"twilio_auth": "*******************************",
+	"twilio_to": "***********",
+	"twilio_from": "***********"
+}
