@@ -58,7 +58,7 @@ RSSI widget
 All settings in seperate "settings.h" file
 
 
-# Adding to Arduino IDE
+## Adding to Arduino IDE
 1: Go to [releases](https://github.com/Kgray44/Automated--Driveway-Gate/releases) and download the latest version.
 
 2: Unzip and open the downloaded file.
