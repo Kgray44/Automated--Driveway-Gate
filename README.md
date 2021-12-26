@@ -69,6 +69,6 @@ All settings in seperate "settings.h" file
 
 5: Click and drag the file inside the version file into the "Arduino" folder.
 
-6: Reboot the Arduino IDE.!
+6: Reboot the Arduino IDE.
 
 7: Installed!
