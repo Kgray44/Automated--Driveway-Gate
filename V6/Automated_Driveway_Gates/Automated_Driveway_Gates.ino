@@ -228,7 +228,7 @@ void loop() {
 
   //car
   //if (digitalRead(car) == 1){
-  //  opengateS();
+  //  opengates();
   //}
   
   //LEDs
@@ -272,7 +272,7 @@ void loop() {
           if (notifications == true){
             Blynk.notify("Driveway Gates were opened by GPS!");
           }
-          opengateS();
+          opengates();
         }
       }
       else if (gateStat == true){
@@ -289,7 +289,7 @@ void loop() {
               Blynk.run();
               delay(1000);
             }
-            closegateS();
+            closegates();
           }
         }
       }
