@@ -15,13 +15,13 @@ boolean ledStrip = true;
 #define blue  D2
 
 //WiFi
-char WIFI_SSID[] = "Apple Network 85064d";
-char WIFI_PASS[] = "12344321";
+char WIFI_SSID[] = "************";
+char WIFI_PASS[] = "*******";
 const char passWord[] = "maker";       //password of this device for OTA
 
 //blynk
-#define BLYNK_AUTH_TOKEN "xRH8NnsHrOGi9utKIbLg0pp5Q5gaHtE9"
-#define BLYNK_AUTH_TOKEN_2 "nGIhBbKBYHv9wGH2umEIvGOkwDwJ24ay"
+#define BLYNK_AUTH_TOKEN "********************************"
+#define BLYNK_AUTH_TOKEN_2 "********************************"
 #define BLYNK_GREEN     "#23C48E"
 #define BLYNK_RED       "#D3435C"
 #define BLYNK_YELLOW    "#ED9D00"
@@ -30,8 +30,8 @@ const char passWord[] = "maker";       //password of this device for OTA
 #define YOUR_LONG       -72.467632
 
 //adafruit IO
-#define IO_USERNAME "KGray7777"
-#define IO_KEY "aio_uFOz49oSFfrdInVrw1N6pwWVhtGZ"
+#define IO_USERNAME "*********"
+#define IO_KEY "***_****************"
 
 //GATE
 #define gateNumber 2          //how many gates; 1 or 2
