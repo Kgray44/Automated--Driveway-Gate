@@ -487,6 +487,7 @@ void allStop() {
 }
 
 void waitForGate() {
+  /*
   int tim = 5500;
   Begin:
   flag2++;
@@ -496,13 +497,22 @@ void waitForGate() {
     Serial.println(flag2);
     goto Begin;
   }
+  flag2 = 0;*/
+
+  
+  int tim = (((maxActuatorStroke*percentOfMaxStroke)/inchesPerSec)*1000)+100;
+  Begin:
+  flag2++;
+  while(flag2 < tim){
+    Blynk.run();
+    delay(2);
+    Serial.println(flag2);
+    goto Begin;
+  }
   flag2 = 0;
-  /* coming soon
-  delay((inchesPerSec*(maxActuatorStroke/percentOfMaxStroke))*1400);
-  */
 }
 
-void opengateS(){
+void opengates(){
   Serial.println("Opening gate...");
   led.setColor(BLYNK_BLUE);
   ledstrip(0,0,255);
@@ -517,7 +527,7 @@ void opengateS(){
   flag1 = 1;
 }
 
-void closegateS(){
+void closegates(){
   Serial.println("Closing gate...");
   led.setColor(BLYNK_BLUE);
   ledstrip(0,0,255);
