@@ -20,20 +20,35 @@ Newest/Official Version:
 # Latest Version's Features
 
 RGB LED strip compatibility (not WS2812)
+
 Indoor alarm
+
 Adafruit and Blynk connectivity
+
 IFTTT / Adafruit compatibility
+
 Blynk compatibility
-Speed widget (not fully functioning at the moment)
+
+Speed / ETA widgets (not fully functioning at the moment)
+
 OTA programming
+
 Distance to gate(s) calculation
+
 Electromagnetic lock compatibility
+
 Blynk gate button changes according to gate status
+
 2 modes; Automatic or button
+
 Distance opening / closing
+
 3 privacy modes for LEDs
+
 Open / close test buttons on Blynk
+
 RSSI widget
+
 All settings in seperate "settings.h" file
 
 
