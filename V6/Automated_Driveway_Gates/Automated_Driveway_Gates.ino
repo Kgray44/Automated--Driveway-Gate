@@ -500,7 +500,7 @@ void waitForGate() {
   flag2 = 0;*/
 
   
-  int tim = (((maxActuatorStroke*percentOfMaxStroke)/inchesPerSec)*1000)+100;
+  int tim = ((((maxActuatorStroke*percentOfMaxStroke)/inchesPerSec)*1000)-400)/4;
   Begin:
   flag2++;
   while(flag2 < tim){
