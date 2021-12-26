@@ -1,4 +1,7 @@
 # Automated-Driveway-Gate
+
+[IMG_0532](https://user-images.githubusercontent.com/64373011/147396038-53ac4bd5-04f0-4970-9bf6-e07dc68c8bf8.jpeg)
+
 Automated Driveway Gate using ESP8266, Arduino, and Blynk.
 
 Tutorial here: https://www.hackster.io/k-gray/automated-driveway-gates-ef5c75
@@ -63,6 +66,6 @@ All settings in seperate "settings.h" file
 
 5: Click and drag the file inside the version file into the "Arduino" folder.
 
-6: Reboot the Arduino IDE.
+6: Reboot the Arduino IDE.!
 
 7: Installed!
