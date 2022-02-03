@@ -10,19 +10,34 @@ Automated Driveway Gate using ESP8266, Arduino, and Blynk.
 Tutorial here: https://www.hackster.io/k-gray/automated-driveway-gates-ef5c75
 
 Old Outdated Versions:
+
 "Driveway-Gate.ino"
+
 "New_Driveway_Gates.ino"
 
+
 Old Usable Versions:
+
 "V1"
+
 "V2"
+
 "V3"
+
 "V4"
+
 "V5"
+
 "V6"
 
+
 Newest/Official Version:
+
 "V7"
+
+Newest/Official Release:
+
+"V6"
 
 
 ## Latest Version's Features
